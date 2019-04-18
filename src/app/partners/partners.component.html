@@ -1,0 +1,36 @@
+<!-- start service section -->
+<section class="container guar-page" >
+  <div class="row">
+    <div class="col-4 offset-4">
+      <h1 class="guar-h1">Our Partners</h1>
+      <hr>
+    </div>
+  </div>
+
+
+  <div class="row guar-row" *ngFor="let data of datas">
+    <div class="col-lg-3" style="text-align: center">
+      <p><img [src]="data.src1" alt="" class="serviceImg"></p>
+      <p>{{data.text1}}</p>
+    </div>
+    <div class="col-lg-3" style="text-align: center">
+      <p><img [src]="data.src2" alt="" class="serviceImg"></p>
+      <p>{{data.text2}}</p>
+    </div>
+    <div class="col-lg-3" style="text-align: center">
+      <p><img [src]="data.src3" alt="" class="serviceImg"></p>
+      <p>{{data.text3}}</p>
+    </div>
+    <div class="col-lg-3" style="text-align: center">
+      <p><img [src]="data.src4" alt="" class="serviceImg"></p>
+      <p>{{data.text4}}</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <hr>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- end service section -->

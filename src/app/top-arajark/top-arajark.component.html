@@ -1,0 +1,33 @@
+<section class="container">
+
+  <div class="row">
+
+    <div class="col-sm-12 col-md-12 col-lg-12 search-con">
+      <form class="search-block">
+        <button class="btn btn-default top-btn submit" type="submit">
+          <img src="../assets/images/searchicon.png">
+        </button>
+        <input type="text" name="search" autofocus="autofocus" id="search" class="search-input search">
+      </form>
+      <hr>
+    </div>
+
+    <div class="row" *ngFor="let top of tops">
+
+      <div class="col-sm-6 ">
+          <div class="col-sm-5"><img [src]="top.src" alt=""></div>
+          <div class="col-sm-7">{{top.text}}</div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="col-sm-5"><img [src]="top.src" alt=""></div>
+        <div class="col-sm-7">{{top.text}}</div>
+      </div>
+
+      <div class="col-sm-12"><hr></div>
+
+    </div>
+
+  </div>
+
+</section>
